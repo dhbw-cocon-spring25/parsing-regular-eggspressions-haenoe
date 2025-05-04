@@ -1,7 +1,7 @@
 package de.dhbw.mh.redeggs;
 
-import static de.dhbw.mh.redeggs.Range.range;
-import static de.dhbw.mh.redeggs.Range.single;
+import static de.dhbw.mh.redeggs.CodePointRange.range;
+import static de.dhbw.mh.redeggs.CodePointRange.single;
 
 /**
  * A parser for regular expressions using recursive descent parsing.
@@ -27,7 +27,7 @@ public class RecursiveDescentRedeggsParser {
 
 	/**
 	 * Parses a regular expression string into an abstract syntax tree (AST).
-	 * 
+	 *
 	 * This class uses recursive descent parsing to convert a given regular
 	 * expression into a tree structure that can be processed or compiled further.
 	 * The AST nodes represent different components of the regex such as literals,
