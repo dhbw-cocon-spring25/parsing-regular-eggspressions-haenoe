@@ -25,6 +25,7 @@ jobs:
         mkdir -p src/test/java/de/dhbw/mh/redeggs/grading
         rm -f src/test/java/de/dhbw/mh/redeggs/grading/GradingTest.java
         cp grading-repo/GradingTest.java src/test/java/de/dhbw/mh/redeggs/grading/
+        sed -i 's!Range!CodePointRange!g'
         cat src/test/java/de/dhbw/mh/redeggs/grading/GradingTest.java
     - name: Parentheses
       id: parentheses
