@@ -30,7 +30,7 @@ public class RedeggsParseException extends Exception {
 	 *                    error occurred during parsing.
 	 */
 	public RedeggsParseException(String message, int errorOffset) {
-		super(message);
+		super(message + " at position " + (errorOffset + 1) + ".");
 		this.errorOffset = errorOffset;
 	}
 
