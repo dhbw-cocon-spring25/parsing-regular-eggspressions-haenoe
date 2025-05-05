@@ -25,6 +25,7 @@ jobs:
         mkdir -p src/test/java/de/dhbw/mh/redeggs/grading
         rm -f src/test/java/de/dhbw/mh/redeggs/grading/GradingTest.java
         cp grading-repo/GradingTest.java src/test/java/de/dhbw/mh/redeggs/grading/
+        cat src/test/java/de/dhbw/mh/redeggs/grading/GradingTest.java
     - name: Parentheses
       id: parentheses
       uses: classroom-resources/autograding-command-grader@v1
